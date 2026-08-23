@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramos Engenharia e Vistoria | Vistoria Técnica de Imóveis em Campo Grande - MS</title>
+<meta name="description" content="Vistoria técnica de imóveis em Campo Grande - MS e região. Entrega das chaves, locação e laudos periciais. Tenha segurança antes de receber, alugar ou devolver um imóvel.">
+<meta name="theme-color" content="#704F31">
+<link rel="canonical" href="https://www.luanaramos.eng.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Ramos Engenharia e Vistoria">
+<meta property="og:title" content="Vistoria Técnica de Imóveis | Ramos Engenharia e Vistoria">
+<meta property="og:description" content="Tenha segurança antes de receber, alugar ou devolver um imóvel. Vistoria técnica em Campo Grande - MS e região.">
+<meta property="og:url" content="https://www.luanaramos.eng.br/">
+<meta property="og:image" content="https://static.wixstatic.com/media/c0fbcb_c293330ec86b482084445e8965d73647~mv2.png/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/c0fbcb_c293330ec86b482084445e8965d73647~mv2.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Karla:wght@400;500;700&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ramos Engenharia e Vistoria",
+  "legalName": "L. Xavier Ramos LTDA",
+  "taxID": "66.929.356/0001-12",
+  "description": "Vistoria técnica de imóveis para entrega das chaves, locação e laudos periciais.",
+  "employee": {
+    "@type": "Person",
+    "name": "Luana Ramos",
+    "jobTitle": "Engenheira Civil",
+    "identifier": "CREA-MS 70573",
+    "alumniOf": "UCDB - Universidade Católica Dom Bosco"
+  },
+  "url": "https://www.luanaramos.eng.br/",
+  "telephone": "+5567999583183",
+  "email": "ramosengenhariaevistoria@gmail.com",
+  "areaServed": { "@type": "City", "name": "Campo Grande", "addressRegion": "MS", "addressCountry": "BR" },
+  "sameAs": ["https://www.instagram.com/ramosengenhariaevistoria"],
+  "knowsAbout": ["Vistoria técnica de imóveis", "Laudo pericial", "Patologias construtivas", "Vistoria de locação"]
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  /* paleta oficial da marca */
+  --brand-brown:#704F31;
+  --brand-olive:#4B5940;
+  --brand-cream:#ECE1CD;
+  --brand-clay:#AC764F;
+
+  --ground:#FBF8F3;
+  --surface:#FFFFFF;
+  --surface-alt:#ECE1CD;
+  --deep:#3A2718;
+  --ink:#2C1F14;
+  --ink-soft:#6A5544;
+  --line:#DFD3BE;
+  --line-soft:#EDE4D6;
+
+  --accent:#704F31;
+  --accent-hover:#5B3E26;
+  --on-accent:#FBF8F3;
+  --clay:#AC764F;
+  --olive:#4B5940;
+  --whats:#1F7A4D;
+
+  --shadow:0 1px 2px rgba(44,31,20,.05), 0 12px 32px -18px rgba(44,31,20,.30);
+  --radius:4px;
+  --maxw:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#171208;
+    --surface:#1F1810;
+    --surface-alt:#241C13;
+    --deep:#120E08;
+    --ink:#F0E7D8;
+    --ink-soft:#B7A48D;
+    --line:#3A2E20;
+    --line-soft:#2B2117;
+
+    --accent:#C8956A;
+    --accent-hover:#D9A97F;
+    --on-accent:#1B1409;
+    --clay:#C8956A;
+    --olive:#7E9268;
+    --whats:#3FA875;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#171208;
+  --surface:#1F1810;
+  --surface-alt:#241C13;
+  --deep:#120E08;
+  --ink:#F0E7D8;
+  --ink-soft:#B7A48D;
+  --line:#3A2E20;
+  --line-soft:#2B2117;
+  --accent:#C8956A;
+  --accent-hover:#D9A97F;
+  --on-accent:#1B1409;
+  --clay:#C8956A;
+  --olive:#7E9268;
+  --whats:#3FA875;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
+}
+
+/* ============ BASE ============ */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:Karla,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px;border-radius:2px}
+
+h1,h2,h3,h4{
+  font-family:Jost,"Helvetica Neue",Arial,sans-serif;
+  font-weight:500;
+  letter-spacing:-.015em;
+  line-height:1.12;
+  margin:0;
+  text-wrap:balance;
+}
+h1{font-size:clamp(2.15rem,5.2vw,3.75rem);font-weight:400}
+h2{font-size:clamp(1.75rem,3.6vw,2.6rem)}
+h3{font-size:1.22rem;font-weight:500;letter-spacing:-.01em}
+p{margin:0 0 1rem;max-width:64ch}
+h2 + p, h3 + p{margin-top:14px}
+
+.eyebrow{
+  font-family:Jost,sans-serif;
+  font-size:.76rem;
+  font-weight:500;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--clay);
+  margin:0 0 .9rem;
+  display:block;
+}
+.lead{font-size:1.12rem;color:var(--ink-soft);max-width:60ch}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+section{padding:clamp(60px,8vw,104px) 0}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--on-accent);padding:12px 18px;z-index:200}
+.skip:focus{left:8px;top:8px}
+
+/* ============ MARCA / GRAFISMO ============ */
+.logo{display:inline-flex;align-items:center;color:var(--accent);text-decoration:none}
+.logo svg{height:34px;width:auto}
+.logo.on-dark{color:var(--brand-cream)}
+.logo.lg svg{height:52px}
+
+/* faixa diagonal — grafismo do papel timbrado */
+.stripes{position:absolute;pointer-events:none;overflow:hidden}
+.stripes i{position:absolute;display:block;transform:rotate(45deg);transform-origin:center}
+
+/* ============ HEADER ============ */
+header.site{
+  position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb, var(--ground) 92%, transparent);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line-soft);
+}
+.bar{display:flex;align-items:center;gap:24px;height:72px}
+.bar nav{display:flex;gap:26px;margin-left:auto}
+.bar nav a{
+  font-family:Jost,sans-serif;font-size:.93rem;font-weight:400;
+  color:var(--ink);text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;
+}
+.bar nav a:hover{color:var(--accent);border-bottom-color:var(--clay)}
+.bar .btn{margin-left:auto}
+.bar nav + .btn{margin-left:0}
+@media (max-width:920px){.bar nav{display:none}}
+
+/* ============ BOTÕES ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:Jost,sans-serif;font-size:1rem;font-weight:500;letter-spacing:.005em;
+  padding:14px 26px;border-radius:var(--radius);border:1.5px solid transparent;
+  text-decoration:none;cursor:pointer;white-space:nowrap;
+  transition:background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.btn-primary:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-onbrown{background:var(--brand-cream);color:#3A2718;border-color:var(--brand-cream)}
+.btn-onbrown:hover{background:#fff;border-color:#fff}
+.btn-outline-cream{background:transparent;color:var(--brand-cream);border-color:rgba(236,225,205,.45)}
+.btn-outline-cream:hover{border-color:var(--brand-cream);background:rgba(236,225,205,.1)}
+.btn-sm{padding:10px 18px;font-size:.92rem}
+.btn svg{width:19px;height:19px;flex:none}
+
+.ctarow{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding:0;background:var(--surface-alt);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;align-items:stretch;min-height:min(86vh,760px)}
+.hero-copy{padding:clamp(46px,6vw,84px) 0 clamp(52px,7vw,92px);display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hero-copy-inner{max-width:600px;padding-right:40px}
+.hero h1{color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--accent);display:block}
+.hero .lead{margin-top:20px;font-size:1.16rem;color:var(--ink-soft)}
+.hero-media{
+  position:relative;
+  background-color:var(--brand-brown);
+  background-image:url("https://static.wixstatic.com/media/c0fbcb_c293330ec86b482084445e8965d73647~mv2.png/v1/fill/w_1000,h_1400,al_c,q_85,enc_auto/c0fbcb_c293330ec86b482084445e8965d73647~mv2.png");
+  background-size:cover;background-position:center 30%;
+  clip-path:polygon(16% 0, 100% 0, 100% 100%, 0 100%);
+  margin-left:-6%;
+}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(200deg, rgba(58,39,24,0) 45%, rgba(58,39,24,.45) 100%);
+}
+.hero-flags{
+  position:absolute;right:0;top:0;width:190px;height:190px;overflow:hidden;z-index:3;pointer-events:none;
+}
+.hero-flags i{position:absolute;width:340px;height:34px;transform:rotate(-45deg)}
+.hero-flags i:nth-child(1){background:var(--brand-olive);top:6px;right:-118px}
+.hero-flags i:nth-child(2){background:var(--brand-clay);top:44px;right:-118px}
+
+.trustrow{
+  display:flex;flex-wrap:wrap;gap:10px 30px;margin-top:34px;padding-top:22px;
+  border-top:1px solid rgba(112,79,49,.22);
+}
+.trustrow span{
+  font-family:Jost,sans-serif;font-size:.86rem;letter-spacing:.03em;color:var(--ink-soft);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.trustrow svg{width:16px;height:16px;color:var(--olive);flex:none}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:44px 0 40px;order:2}
+  .hero-copy-inner{padding-right:0;max-width:none}
+  .hero-media{order:1;min-height:340px;clip-path:none;margin:0 -22px}
+  .hero-flags{width:130px;height:130px}
+  .hero-flags i{width:240px;height:24px;right:-80px}
+  .hero-flags i:nth-child(2){top:32px}
+}
+
+/* ============ DESTAQUE: ENTREGA DAS CHAVES ============ */
+.feature-sec{padding-top:clamp(52px,7vw,88px);padding-bottom:clamp(52px,7vw,88px)}
+.feature{
+  position:relative;overflow:hidden;border-radius:var(--radius);
+  border:1.5px solid var(--brand-brown);background:var(--surface);
+  display:grid;grid-template-columns:1.08fr .92fr;box-shadow:var(--shadow);
+}
+.feature-body{padding:clamp(28px,3.6vw,52px);position:relative;z-index:2}
+.feature-flags{position:absolute;right:0;top:0;width:172px;height:172px;overflow:hidden;z-index:3;pointer-events:none}
+.feature-flags i{position:absolute;width:300px;height:27px;transform:rotate(-45deg);right:-104px}
+.feature-flags i:nth-child(1){background:var(--brand-olive);top:16px}
+.feature-flags i:nth-child(2){background:var(--brand-clay);top:50px}
+
+.pill-main{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--brand-brown);color:var(--brand-cream);
+  font-family:Jost,sans-serif;font-size:.74rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  padding:7px 15px;border-radius:99px;margin-bottom:18px;
+}
+.pill-main::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brand-clay)}
+
+.feature h2{font-size:clamp(1.7rem,3.2vw,2.5rem);color:var(--ink);max-width:17ch}
+.feature .kicker-warn{
+  font-family:Jost,sans-serif;font-size:1.1rem;font-weight:500;color:var(--accent);
+  margin:14px 0 12px;max-width:46ch;text-wrap:balance;
+}
+.feature p{font-size:1rem;color:var(--ink-soft)}
+
+.feature-split{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:26px 0 4px}
+.feature-split h3{
+  font-family:Jost,sans-serif;font-size:.76rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--clay);margin-bottom:12px;
+}
+.mini-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.mini-list li{
+  display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;
+  font-size:.95rem;line-height:1.45;
+}
+.mini-list svg{width:15px;height:15px;color:var(--olive);margin-top:.3em;flex:none}
+
+.deadline{
+  display:grid;grid-template-columns:auto 1fr;gap:13px;align-items:start;
+  background:var(--surface-alt);border-left:3px solid var(--brand-clay);
+  padding:15px 17px;border-radius:var(--radius);margin:26px 0 0;
+}
+.deadline svg{width:20px;height:20px;color:var(--brand-clay);margin-top:.15em;flex:none}
+.deadline p{margin:0;font-size:.94rem;color:var(--ink)}
+.deadline strong{font-family:Jost,sans-serif;font-weight:500}
+
+.feature .ctarow{margin-top:24px}
+.feature-media{
+  position:relative;background-color:var(--brand-brown);
+  background-image:url("https://static.wixstatic.com/media/c0fbcb_97d56ba5e7a644edb749efd7ae6788fc~mv2.png/v1/fill/w_900,h_1200,al_c,q_85,enc_auto/c0fbcb_97d56ba5e7a644edb749efd7ae6788fc~mv2.png");
+  background-size:cover;background-position:center;min-height:420px;
+}
+.feature-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(58,39,24,.05) 40%,rgba(58,39,24,.5) 100%)}
+@media (max-width:980px){
+  .feature{grid-template-columns:1fr}
+  .feature-media{order:-1;min-height:280px}
+  .feature-flags{width:126px;height:126px}
+  .feature-flags i{width:230px;height:22px;right:-78px}
+  .feature-flags i:nth-child(1){top:12px}
+  .feature-flags i:nth-child(2){top:40px}
+}
+@media (max-width:600px){
+  .feature-split{grid-template-columns:1fr;gap:22px}
+}
+
+/* card em destaque na grade de servicos */
+.card.is-main{border-color:var(--brand-brown);border-width:1.5px}
+.card.is-main .card-body{background:var(--surface-alt)}
+.tag-main{
+  display:inline-flex;align-items:center;gap:7px;background:var(--brand-brown);color:var(--brand-cream);
+  font-family:Jost,sans-serif;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:4px 10px;border-radius:99px;align-self:flex-start;
+}
+
+/* ============ FAIXA DE RISCO ============ */
+.risk{background:var(--brand-brown);color:var(--brand-cream);position:relative;overflow:hidden}
+.risk h2{color:#fff;max-width:20ch}
+.risk .lead{color:rgba(236,225,205,.82)}
+.risk-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,64px);align-items:start}
+.risk-list{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.risk-list li{
+  display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;
+  padding:20px 0;border-top:1px solid rgba(236,225,205,.22);
+}
+.risk-list li:last-child{border-bottom:1px solid rgba(236,225,205,.22)}
+.risk-list b{
+  font-family:Jost,sans-serif;font-weight:400;font-size:.68rem;letter-spacing:.14em;
+  color:var(--brand-clay);padding-top:.6em;min-width:6.4em;
+}
+.risk-list strong{display:block;font-family:Jost,sans-serif;font-size:1.1rem;font-weight:500;color:#fff;margin-bottom:4px}
+.risk-list p{margin:0;color:rgba(236,225,205,.78);font-size:.97rem;max-width:52ch}
+
+/* ============ SERVIÇOS ============ */
+.sec-head{max-width:60ch;margin-bottom:clamp(32px,4vw,52px)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);
+  transition:border-color .2s ease, transform .2s ease;
+}
+.card:hover{border-color:var(--clay);transform:translateY(-3px)}
+.card-media{
+  height:186px;background-color:var(--brand-olive);background-size:cover;background-position:center;
+  position:relative;
+}
+.card-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(58,39,24,0) 40%,rgba(58,39,24,.55) 100%)}
+.card-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1;gap:10px}
+.card-body h3{color:var(--ink)}
+.card-body p{font-size:.97rem;color:var(--ink-soft);margin:0}
+.card-body .btn{margin-top:auto;align-self:flex-start}
+.tag{
+  font-family:Jost,sans-serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--clay);
+}
+@media (max-width:900px){.cards{grid-template-columns:1fr}}
+
+/* ============ PROCESSO ============ */
+.process{background:var(--surface-alt)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:step}
+.step{padding:26px 24px 26px 0;border-top:2px solid var(--brand-brown);position:relative}
+.step + .step{padding-left:24px}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-family:Jost,sans-serif;font-size:.82rem;letter-spacing:.14em;color:var(--clay);
+  display:block;margin-bottom:12px;
+}
+.step h3{font-size:1.06rem;margin-bottom:7px;color:var(--ink)}
+.step p{font-size:.95rem;color:var(--ink-soft);margin:0}
+@media (max-width:820px){
+  .steps{grid-template-columns:1fr}
+  .step,.step + .step{padding:20px 0}
+}
+
+/* ============ CHECKLIST ============ */
+.check-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,66px);align-items:center}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 26px;margin:0;padding:0;list-style:none}
+.checks li{
+  display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;
+  padding:13px 0;border-bottom:1px solid var(--line-soft);font-size:.99rem;
+}
+.checks svg{width:17px;height:17px;color:var(--olive);margin-top:.32em;flex:none}
+.photo-block{
+  border-radius:var(--radius);overflow:hidden;position:relative;
+  aspect-ratio:4/5;background-color:var(--brand-brown);background-size:cover;background-position:center;
+  box-shadow:var(--shadow);
+}
+.photo-block .corner{position:absolute;left:0;bottom:0;width:150px;height:150px;overflow:hidden}
+.photo-block .corner i{position:absolute;width:280px;height:26px;transform:rotate(-45deg);left:-96px}
+.photo-block .corner i:nth-child(1){background:var(--brand-olive);bottom:44px}
+.photo-block .corner i:nth-child(2){background:var(--brand-clay);bottom:8px}
+@media (max-width:900px){
+  .check-grid{grid-template-columns:1fr}
+  .checks{grid-template-columns:1fr}
+  .photo-block{aspect-ratio:16/10}
+}
+
+/* ============ PÚBLICO ============ */
+.audience{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.aud{
+  background:var(--surface);border:1px solid var(--line-soft);border-left:3px solid var(--olive);
+  padding:22px 20px;border-radius:var(--radius);
+}
+.aud h3{font-size:1.02rem;margin-bottom:6px}
+.aud p{font-size:.93rem;color:var(--ink-soft);margin:0}
+
+/* ============ SOBRE ============ */
+.about{background:var(--surface-alt)}
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(32px,5vw,64px);align-items:center}
+.marker{
+  background:rgba(172,118,79,.16);border-bottom:1px dashed var(--clay);
+  padding:0 4px;font-family:Jost,sans-serif;font-size:.95em;color:var(--accent);
+  overflow-wrap:anywhere;
+}
+.signature{
+  font-family:Jost,sans-serif;font-size:1.32rem;font-weight:500;letter-spacing:-.01em;
+  color:var(--ink);margin:22px 0 14px;padding-top:18px;border-top:1px solid var(--line);
+}
+.signature span{
+  display:block;font-size:.8rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--clay);margin-top:5px;
+}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.badge{
+  font-family:Jost,sans-serif;font-size:.85rem;letter-spacing:.04em;
+  border:1px solid var(--line);padding:8px 14px;border-radius:99px;color:var(--ink-soft);
+  background:var(--surface);
+}
+
+/* ============ FAQ ============ */
+.faq{max-width:820px}
+details{border-bottom:1px solid var(--line-soft);padding:4px 0}
+details summary{
+  cursor:pointer;list-style:none;padding:18px 34px 18px 0;position:relative;
+  font-family:Jost,sans-serif;font-size:1.07rem;font-weight:500;color:var(--ink);
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:10px;height:10px;
+  border-right:1.5px solid var(--clay);border-bottom:1.5px solid var(--clay);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s ease;
+}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details p{padding:0 0 18px;color:var(--ink-soft);font-size:.99rem;margin:0}
+
+/* ============ CONTATO ============ */
+.contact{background:var(--brand-brown);color:var(--brand-cream);position:relative;overflow:hidden}
+.contact h2{color:#fff}
+.contact .eyebrow{color:var(--brand-clay)}
+.contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(32px,5vw,60px);align-items:start;position:relative;z-index:2}
+.contact p{color:rgba(236,225,205,.82)}
+.contact-list{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
+.contact-list li{display:grid;grid-template-columns:auto 1fr;gap:13px;align-items:start}
+.contact-list svg{width:19px;height:19px;color:var(--brand-clay);margin-top:.25em;flex:none}
+.contact-list a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.contact-list a:hover{border-bottom-color:#fff}
+.contact-list span{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-family:Jost,sans-serif;color:rgba(236,225,205,.6);margin-bottom:2px}
+
+form{
+  background:var(--surface);border-radius:var(--radius);padding:clamp(24px,3.5vw,34px);
+  color:var(--ink);box-shadow:0 24px 60px -30px rgba(0,0,0,.55);
+}
+.field{display:grid;gap:7px;margin-bottom:16px}
+.field label{font-family:Jost,sans-serif;font-size:.86rem;letter-spacing:.05em;color:var(--ink-soft)}
+.field .req{color:var(--clay)}
+input,select,textarea{
+  font-family:Karla,sans-serif;font-size:1rem;color:var(--ink);
+  background:var(--ground);border:1px solid var(--line);border-radius:var(--radius);
+  padding:12px 13px;width:100%;transition:border-color .15s ease;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--clay);outline:none;box-shadow:0 0 0 3px rgba(172,118,79,.18)}
+textarea{min-height:110px;resize:vertical}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .btn{width:100%;margin-top:6px}
+.formnote{font-size:.83rem;color:var(--ink-soft);margin:12px 0 0;text-align:center}
+@media (max-width:860px){
+  .contact-grid,.about-grid,.risk-grid{grid-template-columns:1fr}
+  .field-row{grid-template-columns:1fr}
+}
+
+/* ============ RODAPÉ ============ */
+footer.site{background:var(--deep);color:rgba(236,225,205,.72);padding:52px 0 30px;font-size:.93rem}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px;padding-bottom:34px;border-bottom:1px solid rgba(236,225,205,.14)}
+footer.site h4{font-family:Jost,sans-serif;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-clay);margin-bottom:14px;font-weight:500}
+footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+footer.site a{color:rgba(236,225,205,.82);text-decoration:none}
+footer.site a:hover{color:#fff}
+footer.site p{max-width:38ch;color:rgba(236,225,205,.62)}
+.foot-bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;padding-top:22px;font-size:.83rem;color:rgba(236,225,205,.5)}
+@media (max-width:800px){.foot-grid{grid-template-columns:1fr;gap:28px}}
+
+/* ============ WHATSAPP FLUTUANTE + BARRA MOBILE ============ */
+.wa-float{
+  position:fixed;right:18px;bottom:18px;z-index:120;
+  width:56px;height:56px;border-radius:50%;background:var(--whats);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px -6px rgba(0,0,0,.45);text-decoration:none;
+  transition:transform .2s ease;
+}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:29px;height:29px}
+.mobile-cta{display:none}
+@media (max-width:760px){
+  .mobile-cta{
+    display:grid;grid-template-columns:1fr 1fr;gap:8px;
+    position:fixed;left:0;right:0;bottom:0;z-index:130;
+    padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+    background:color-mix(in srgb, var(--ground) 95%, transparent);
+    backdrop-filter:blur(10px);border-top:1px solid var(--line);
+  }
+  .mobile-cta .btn{width:100%;padding:12px 10px;font-size:.92rem}
+  .wa-float{bottom:78px;width:50px;height:50px}
+  body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#servicos">Ir para o conteúdo</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Ramos Engenharia — página inicial"><svg role="img" aria-label="Ramos Engenharia" xmlns="http://www.w3.org/2000/svg" viewBox="376.7 381.9 1166.7 316.1"><path fill="currentColor" d="M 494.019531 511.730469 C 508.054688 508.117188 519.011719 500.898438 526.90625 490.074219 C 534.789062 479.242188 538.667969 467.347656 538.667969 454.25 C 538.667969 438.339844 532.914062 424.304688 521.550781 412.011719 C 510.1875 399.710938 494.949219 393.558594 475.832031 393.558594 L 384.671875 393.558594 L 384.671875 420.160156 L 475.035156 420.160156 C 485.460938 420.160156 493.886719 423.507812 500.304688 430.1875 C 506.71875 436.871094 509.921875 444.886719 509.921875 454.117188 C 509.921875 463.339844 506.585938 471.222656 500.027344 477.773438 C 493.480469 484.320312 484.800781 487.667969 473.96875 487.667969 L 384.671875 487.667969 L 384.671875 585.242188 L 414.347656 585.242188 L 414.347656 514.136719 L 462.734375 514.136719 L 509.257812 585.375 L 543.472656 585.375 Z M 494.019531 511.730469 "/><path fill="currentColor" d="M 711.464844 393.691406 L 673.507812 393.691406 L 597.578125 585.375 L 628.597656 585.375 L 646.90625 538.863281 L 657.074219 512.527344 L 657.066406 512.527344 L 657.542969 511.304688 L 657.625 511.101562 L 657.765625 510.738281 L 692.625 421.894531 L 727.910156 512.527344 L 738.066406 538.863281 L 756.386719 585.375 L 787.394531 585.375 Z M 711.464844 393.691406 "/><path fill="currentColor" d="M 1014.867188 393.691406 L 948.035156 490.074219 L 880.9375 393.691406 L 852.460938 393.691406 L 852.460938 585.375 L 882.40625 585.375 L 882.40625 445.160156 L 947.769531 537.261719 L 1013.53125 445.160156 L 1013.53125 585.375 L 1043.347656 585.375 L 1043.347656 393.691406 Z M 1014.867188 393.691406 "/><path fill="currentColor" d="M 1267.21875 541.003906 C 1254.25 555.039062 1237.402344 561.988281 1216.816406 561.988281 L 1216.816406 561.722656 C 1196.234375 561.722656 1179.394531 554.765625 1166.292969 540.730469 C 1153.1875 526.695312 1146.640625 509.453125 1146.640625 489.003906 C 1146.640625 468.949219 1153.1875 452.109375 1166.292969 438.339844 C 1179.394531 424.570312 1196.234375 417.753906 1216.816406 417.753906 C 1237.269531 417.753906 1253.976562 424.710938 1267.082031 438.472656 C 1280.183594 452.242188 1286.730469 469.214844 1286.730469 489.269531 C 1286.730469 509.71875 1280.183594 526.96875 1267.21875 541.003906 M 1287.933594 418.558594 C 1268.949219 399.710938 1245.15625 390.222656 1216.683594 390.222656 C 1188.082031 390.222656 1164.285156 399.710938 1145.304688 418.558594 C 1126.320312 437.410156 1116.832031 461.066406 1116.832031 489.402344 C 1116.832031 517.738281 1126.320312 541.402344 1145.4375 560.519531 C 1164.550781 579.632812 1188.347656 589.121094 1216.816406 589.121094 L 1216.816406 588.988281 C 1245.296875 588.988281 1268.949219 579.5 1287.933594 560.386719 C 1306.917969 541.269531 1316.402344 517.605469 1316.402344 489.269531 C 1316.402344 460.933594 1306.917969 437.410156 1287.933594 418.558594 "/><path fill="currentColor" d="M 1522.628906 498.898438 C 1514.210938 491.277344 1501.644531 484.859375 1485.070312 479.648438 L 1438.015625 464.675781 C 1429.457031 462.136719 1423.175781 459.054688 1419.296875 455.453125 C 1415.421875 451.84375 1413.421875 447.292969 1413.421875 441.816406 C 1413.421875 434.871094 1416.890625 428.851562 1423.714844 423.773438 C 1430.527344 418.691406 1439.21875 416.152344 1449.777344 416.152344 C 1461.945312 416.152344 1472.636719 418.824219 1481.855469 424.304688 C 1491.085938 429.789062 1497.902344 437.003906 1502.441406 445.957031 L 1530.113281 437.675781 C 1524.230469 424.039062 1514.210938 412.675781 1500.042969 403.585938 C 1485.867188 394.496094 1469.023438 389.949219 1449.511719 389.949219 C 1430.527344 389.949219 1414.757812 395.160156 1402.191406 405.460938 C 1389.625 415.753906 1383.34375 428.179688 1383.34375 442.621094 C 1383.34375 464.941406 1397.644531 480.578125 1426.386719 489.535156 L 1474.503906 504.90625 C 1485.46875 508.382812 1493.21875 512.261719 1497.902344 516.675781 C 1502.574219 521.082031 1504.847656 526.429688 1504.847656 532.84375 C 1504.847656 540.730469 1500.707031 547.683594 1492.554688 553.703125 C 1484.398438 559.710938 1473.972656 562.792969 1461.273438 562.792969 C 1446.839844 562.792969 1434.40625 559.046875 1423.847656 551.5625 C 1413.289062 544.074219 1405.800781 534.453125 1401.386719 522.816406 L 1373.316406 531.242188 C 1378.800781 547.554688 1389.226562 561.324219 1404.597656 572.410156 C 1419.972656 583.507812 1438.28125 589.121094 1459.671875 589.121094 L 1460.476562 588.988281 C 1482.53125 588.988281 1500.574219 583.375 1514.476562 572.144531 C 1528.378906 560.914062 1535.328125 547.144531 1535.328125 530.710938 C 1535.328125 517.074219 1531.050781 506.515625 1522.628906 498.898438 "/><path fill="currentColor" d="M 704.875 635.628906 L 704.875 658.125 L 735.882812 658.125 L 735.882812 661.722656 L 704.875 661.722656 L 704.875 685.21875 L 740 685.21875 L 740 689.054688 L 700.71875 689.054688 L 700.71875 631.753906 L 740.078125 631.753906 L 740.078125 635.628906 Z M 704.875 635.628906 "/><path fill="currentColor" d="M 797.265625 631.753906 L 797.265625 689.050781 L 793.390625 689.050781 L 755.671875 638.828125 L 755.671875 689.050781 L 751.515625 689.050781 L 751.515625 631.753906 L 755.351562 631.753906 L 793.070312 682.019531 L 793.070312 631.753906 Z M 797.265625 631.753906 "/><path fill="currentColor" d="M 865.359375 661.84375 C 865.320312 670.75 862.605469 677.664062 857.25 682.621094 C 851.894531 687.574219 845.144531 690.050781 837.03125 690.050781 C 828.640625 690.050781 821.609375 687.214844 815.933594 681.5 C 810.261719 675.785156 807.425781 668.714844 807.425781 660.242188 C 807.425781 651.894531 810.21875 644.898438 815.855469 639.265625 C 821.488281 633.632812 828.480469 630.796875 836.871094 630.796875 C 843.066406 630.796875 848.539062 632.3125 853.253906 635.351562 C 857.96875 638.386719 861.324219 642.421875 863.285156 647.457031 L 859.289062 648.414062 C 857.609375 644.300781 854.773438 640.984375 850.816406 638.46875 C 846.859375 635.949219 842.1875 634.671875 836.832031 634.671875 C 829.359375 634.671875 823.289062 637.148438 818.570312 642.101562 C 813.855469 647.058594 811.5 653.089844 811.5 660.164062 C 811.5 667.476562 813.855469 673.628906 818.609375 678.664062 C 823.367188 683.699219 829.519531 686.214844 837.070312 686.214844 C 844.0625 686.214844 849.816406 684.136719 854.332031 680.023438 C 858.847656 675.90625 861.246094 670.273438 861.566406 663.121094 L 836.59375 663.121094 L 836.59375 659.445312 L 865.480469 659.445312 Z M 865.359375 661.84375 "/><path fill="currentColor" d="M 879.875 635.628906 L 879.875 658.125 L 910.882812 658.125 L 910.882812 661.722656 L 879.875 661.722656 L 879.875 685.21875 L 915 685.21875 L 915 689.054688 L 875.71875 689.054688 L 875.71875 631.753906 L 915.078125 631.753906 L 915.078125 635.628906 Z M 879.875 635.628906 "/><path fill="currentColor" d="M 972.265625 631.753906 L 972.265625 689.050781 L 968.390625 689.050781 L 930.667969 638.828125 L 930.667969 689.050781 L 926.515625 689.050781 L 926.515625 631.753906 L 930.351562 631.753906 L 968.070312 682.019531 L 968.070312 631.753906 Z M 972.265625 631.753906 "/><path fill="currentColor" d="M 1030.652344 631.753906 L 1030.652344 689.050781 L 1026.496094 689.050781 L 1026.496094 661.722656 L 989.496094 661.722656 L 989.496094 689.050781 L 985.339844 689.050781 L 985.339844 631.753906 L 989.496094 631.753906 L 989.496094 657.964844 L 1026.496094 657.964844 L 1026.496094 631.753906 Z M 1030.652344 631.753906 "/><path fill="currentColor" d="M 1078.449219 668.355469 L 1065.105469 636.347656 L 1051.679688 668.355469 Z M 1080.085938 672.191406 L 1050.078125 672.191406 L 1043.007812 689.050781 L 1038.453125 689.050781 L 1062.667969 631.753906 L 1067.5 631.753906 L 1091.714844 689.050781 L 1087.121094 689.050781 Z M 1080.085938 672.191406 "/><path fill="currentColor" d="M 1103.511719 661.601562 L 1125.128906 661.601562 C 1129.242188 661.601562 1132.519531 660.324219 1134.957031 657.765625 C 1137.394531 655.210938 1138.59375 652.171875 1138.59375 648.617188 C 1138.59375 645.058594 1137.355469 642.023438 1134.917969 639.464844 C 1132.480469 636.90625 1129.203125 635.628906 1125.089844 635.628906 L 1103.550781 635.628906 Z M 1122.609375 665.316406 L 1103.550781 665.316406 L 1103.550781 689.050781 L 1099.398438 689.050781 L 1099.398438 631.753906 L 1125.167969 631.753906 C 1130.5625 631.753906 1134.839844 633.472656 1137.953125 636.90625 C 1141.070312 640.34375 1142.628906 644.261719 1142.628906 648.617188 C 1142.628906 652.769531 1141.273438 656.449219 1138.554688 659.683594 C 1135.835938 662.921875 1132.121094 664.757812 1127.367188 665.238281 L 1143.429688 689.050781 L 1138.59375 689.050781 Z M 1122.609375 665.316406 "/><path fill="currentColor" d="M 1154.066406 631.753906 L 1158.222656 631.753906 L 1158.222656 689.050781 L 1154.066406 689.050781 Z M 1154.066406 631.753906 "/><path fill="currentColor" d="M 1206.011719 668.355469 L 1192.667969 636.347656 L 1179.242188 668.355469 Z M 1207.652344 672.191406 L 1177.644531 672.191406 L 1170.570312 689.050781 L 1166.015625 689.050781 L 1190.230469 631.753906 L 1195.066406 631.753906 L 1219.277344 689.050781 L 1214.683594 689.050781 Z M 1207.652344 672.191406 "/></svg></a>
+    <nav aria-label="Navegação principal">
+      <a href="#entrega-chaves">Entrega das chaves</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#verificamos">O que verificamos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#contato">Solicitar uma vistoria</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ======== HERO ======== -->
+  <section class="hero">
+    <div class="hero-flags" aria-hidden="true"><i></i><i></i></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-copy-inner">
+            <span class="eyebrow">Vistoria técnica de imóveis · Campo Grande - MS</span>
+            <h1>Tenha segurança antes de receber, alugar ou <em>devolver um imóvel.</em></h1>
+            <p class="lead">Análise técnica de engenharia que identifica falhas, danos, patologias e inconformidades antes que elas se tornem problema — e prejuízo — seu.</p>
+            <div class="ctarow">
+              <a class="btn btn-primary" href="#entrega-chaves">Solicitar uma vistoria</a>
+              <a class="btn btn-ghost" href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20vistoria%20t%C3%A9cnica%20de%20im%C3%B3veis." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2zm0 18.13h-.01c-1.52 0-3.02-.41-4.32-1.18l-.31-.18-3.21.84.86-3.13-.2-.32a8.22 8.22 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+                Falar com um especialista
+              </a>
+            </div>
+            <div class="trustrow">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7.5-7 9-4-1.5-7-5-7-9V6l7-3z"/></svg>Relatório com ART e registro fotográfico</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20h16M6 20V9l6-5 6 5v11"/></svg>Eng. civil · CREA-MS 70573</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Campo Grande - MS e região</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media" role="img" aria-label="Engenheira realizando vistoria técnica, examinando parede com tubulação aparente"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DESTAQUE: ENTREGA DAS CHAVES ======== -->
+  <section id="entrega-chaves" class="feature-sec">
+    <div class="wrap">
+      <div class="feature">
+        <div class="feature-flags" aria-hidden="true"><i></i><i></i></div>
+
+        <div class="feature-body">
+          <span class="pill-main">Serviço principal</span>
+          <h2>Vai receber as chaves do seu imóvel novo?</h2>
+          <p class="kicker-warn">Não assine o termo de entrega antes da vistoria técnica.</p>
+          <p>A assinatura do termo transfere para você a responsabilidade pelo estado do imóvel. Enquanto ela não acontece, tudo que estiver fora de conformidade é obrigação da construtora corrigir — sem custo para você.</p>
+
+          <div class="feature-split">
+            <div>
+              <h3>O que é inspecionado</h3>
+              <ul class="mini-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Acabamentos e revestimentos</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Esquadrias, portas e janelas</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Pontos hidráulicos</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Pontos elétricos e instalações</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Falhas aparentes em cada ambiente</span></li>
+              </ul>
+            </div>
+            <div>
+              <h3>O que você recebe</h3>
+              <ul class="mini-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Relatório técnico com cada ocorrência descrita</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Registro fotográfico item a item</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">ART — Anotação de Responsabilidade Técnica</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">Documento pronto para apresentar à construtora</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span class="txt">1 reinspeção inclusa, após a correção pela construtora</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="deadline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+            <p><strong>Já recebeu a convocação da construtora?</strong> Agende a vistoria assim que a data da entrega for marcada, para que o relatório esteja pronto antes da assinatura.</p>
+          </div>
+
+          <div class="ctarow">
+            <a class="btn btn-primary" href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Vou%20receber%20as%20chaves%20de%20um%20im%C3%B3vel%20novo%20e%20quero%20agendar%20a%20vistoria%20de%20entrega." target="_blank" rel="noopener">Agendar vistoria de entrega</a>
+            <a class="btn btn-ghost" href="#contato">Solicitar pelo formulário</a>
+          </div>
+        </div>
+
+        <div class="feature-media" role="img" aria-label="Frente de casa moderna recém-entregue, pronta para vistoria técnica"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== RISCO ======== -->
+  <section class="risk">
+    <div class="wrap risk-grid">
+      <div>
+        <span class="eyebrow">O que está em jogo</span>
+        <h2>Depois que você assina, o problema passa a ser seu.</h2>
+        <p class="lead">A assinatura do termo de entrega, do contrato de locação ou do termo de devolução transfere a responsabilidade pelo estado do imóvel. A vistoria técnica é feita antes disso — quando ainda dá para exigir a correção.</p>
+      </div>
+      <ul class="risk-list">
+        <li>
+          <b>CHAVES</b>
+          <div>
+            <strong>Falhas que só aparecem depois da mudança</strong>
+            <p>Infiltração, desnível de piso, esquadria desalinhada, ponto elétrico sem função. Encontradas antes da entrega, são obrigação da construtora.</p>
+          </div>
+        </li>
+        <li>
+          <b>LOCAÇÃO</b>
+          <div>
+            <strong>Discussão sobre danos no fim do contrato</strong>
+            <p>Sem registro técnico da entrada, a saída vira palavra contra palavra — e o desconto do depósito vira conflito.</p>
+          </div>
+        </li>
+        <li>
+          <b>LAUDO</b>
+          <div>
+            <strong>Dano real sem documento que o comprove</strong>
+            <p>Uma reclamação sem laudo técnico não sustenta negociação, notificação nem processo.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======== SERVIÇOS ======== -->
+  <section id="servicos">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Serviços</span>
+        <h2>Três momentos críticos na vida de um imóvel.</h2>
+        <p class="lead">O mesmo método técnico, aplicado ao momento em que o risco existe.</p>
+      </div>
+      <div class="cards">
+
+        <article class="card is-main">
+          <div class="card-media" style="background-image:url('https://static.wixstatic.com/media/c0fbcb_669497533cc4464eb12ee0cf09056bd2~mv2.png/v1/fill/w_760,h_500,al_c,q_85,enc_auto/c0fbcb_669497533cc4464eb12ee0cf09056bd2~mv2.png')" role="img" aria-label="Vistoria técnica em banheiro de imóvel em fase de acabamento"></div>
+          <div class="card-body">
+            <span class="tag-main">Serviço principal</span>
+            <h3>Vistoria para entrega das chaves</h3>
+            <p>Inspeção de acabamentos, instalações, esquadrias, revestimentos, pontos hidráulicos, elétricos e possíveis falhas aparentes antes da entrega definitiva do imóvel.</p>
+            <a class="btn btn-primary btn-sm" href="#entrega-chaves">Ver detalhes do serviço</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://static.wixstatic.com/media/c0fbcb_0bb1b78b662e4044a72124b5cf77ff99~mv2.png/v1/fill/w_760,h_500,al_c,q_85,enc_auto/c0fbcb_0bb1b78b662e4044a72124b5cf77ff99~mv2.png')" role="img" aria-label="Engenheira inspecionando varanda de apartamento"></div>
+          <div class="card-body">
+            <span class="tag">Entrada e saída</span>
+            <h3>Vistoria de imóveis para locação</h3>
+            <p>Registro técnico do estado do imóvel na entrada e na saída, facilitando comparações, reduzindo conflitos e protegendo as partes envolvidas.</p>
+            <a class="btn btn-ghost btn-sm" href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Preciso%20de%20uma%20vistoria%20de%20loca%C3%A7%C3%A3o%20%28entrada%20ou%20sa%C3%ADda%29." target="_blank" rel="noopener">Solicitar esta vistoria</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://static.wixstatic.com/media/c0fbcb_4ec2e6a398e44ba39eab6e04dd9767cf~mv2.png/v1/fill/w_760,h_500,al_c,q_85,enc_auto/c0fbcb_4ec2e6a398e44ba39eab6e04dd9767cf~mv2.png')" role="img" aria-label="Inspeção de teto danificado com abertura no forro"></div>
+          <div class="card-body">
+            <span class="tag">Prova técnica</span>
+            <h3>Vistoria para laudos periciais</h3>
+            <p>Identificação e documentação de danos, patologias, falhas construtivas e inconformidades para fundamentação técnica.</p>
+            <a class="btn btn-ghost btn-sm" href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Preciso%20de%20uma%20vistoria%20para%20fundamentar%20um%20laudo%20pericial." target="_blank" rel="noopener">Solicitar esta vistoria</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROCESSO ======== -->
+  <section id="processo" class="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do primeiro contato ao documento em mãos.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Contato e enquadramento</h3>
+          <p>Você informa o tipo de imóvel, o endereço e em qual momento está: recebimento, entrada, saída ou necessidade de laudo.</p>
+        </div>
+        <div class="step">
+          <h3>Agendamento</h3>
+          <p>Data e horário definidos conforme a disponibilidade da agenda e o prazo do seu contrato ou do termo de entrega.</p>
+        </div>
+        <div class="step">
+          <h3>Inspeção no imóvel</h3>
+          <p>Verificação item a item, ambiente por ambiente, com registro fotográfico de cada ocorrência identificada.</p>
+        </div>
+        <div class="step">
+          <h3>Entrega do relatório</h3>
+          <p>Documento técnico com as ocorrências descritas e ilustradas, pronto para ser apresentado à construtora, à imobiliária ou à outra parte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== O QUE VERIFICAMOS ======== -->
+  <section id="verificamos">
+    <div class="wrap check-grid">
+      <div>
+        <span class="eyebrow">Escopo técnico</span>
+        <h2>O que é verificado em uma vistoria.</h2>
+        <p class="lead">A inspeção percorre o imóvel ambiente por ambiente. Cada ocorrência é descrita e fotografada.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Acabamentos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Revestimentos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Esquadrias</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Pontos hidráulicos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Pontos elétricos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Instalações</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Falhas aparentes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Patologias construtivas</li>
+        </ul>
+      </div>
+      <div class="photo-block" style="background-image:url('https://static.wixstatic.com/media/c0fbcb_13051b1babf0468b9fa85553e57395d9~mv2.png/v1/fill/w_900,h_1125,al_c,q_85,enc_auto/c0fbcb_13051b1babf0468b9fa85553e57395d9~mv2.png')" role="img" aria-label="Vazamento identificado na tubulação sob a pia durante vistoria técnica">
+        <div class="corner" aria-hidden="true"><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PÚBLICO ======== -->
+  <section style="background:var(--surface-alt)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Para quem é</span>
+        <h2>Se você está em um destes momentos, a vistoria é para você.</h2>
+      </div>
+      <div class="audience">
+        <div class="aud"><h3>Vai receber as chaves</h3><p>Imóvel novo, direto da construtora, antes da assinatura do termo de entrega.</p></div>
+        <div class="aud"><h3>Vai alugar seu imóvel</h3><p>Proprietário que quer o estado do bem documentado antes de entregá-lo ao inquilino.</p></div>
+        <div class="aud"><h3>Vai entrar ou sair de um aluguel</h3><p>Locatário que precisa comprovar o estado do imóvel na entrada e na devolução.</p></div>
+        <div class="aud"><h3>Precisa documentar um problema</h3><p>Quem identificou dano ou falha construtiva e precisa de registro técnico da ocorrência.</p></div>
+        <div class="aud"><h3>Precisa fundamentar um laudo</h3><p>Quem necessita de vistoria para embasar tecnicamente um laudo pericial.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SOBRE ======== -->
+  <section id="sobre" class="about">
+    <div class="wrap about-grid">
+      <div class="photo-block" style="background-image:url('https://static.wixstatic.com/media/c0fbcb_34f78def110841fe8d90d27ea892bf82~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_auto/c0fbcb_34f78def110841fe8d90d27ea892bf82~mv2.jpg');aspect-ratio:3/4" role="img" aria-label="Engenheira examinando esquadria de janela durante vistoria técnica">
+        <div class="corner" aria-hidden="true"><i></i><i></i></div>
+      </div>
+      <div>
+        <span class="eyebrow">Quem faz a vistoria</span>
+        <h2>Engenharia aplicada à proteção do seu investimento.</h2>
+        <p>A Ramos Engenharia e Vistoria protege os interesses de seus clientes por meio de análises técnicas que identificam falhas, danos, patologias e inconformidades em imóveis.</p>
+        <p class="signature">Luana Ramos <span>Engenheira Civil · CREA-MS 70573</span></p>
+        <p>Formada em Engenharia Civil pela UCDB-MS, com especialização em Avaliação e Perícia de Imóveis pelo IPOG. A vistoria é conduzida pessoalmente pela responsável técnica, em Campo Grande - MS e região.</p>
+        <div class="badges">
+          <span class="badge">CREA-MS 70573</span>
+          <span class="badge">Especialização em avaliação e perícia — IPOG</span>
+          <span class="badge">Campo Grande - MS e região</span>
+          <span class="badge">Atendimento particular e para construtoras</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAQ ======== -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Antes de agendar.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Em que momento devo fazer a vistoria de entrega das chaves?</summary>
+          <p>Antes de assinar o termo de entrega. É esse documento que transfere a responsabilidade pelo estado do imóvel para você — depois dele, corrigir falhas deixa de ser obrigação da construtora.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo dura a inspeção no imóvel?</summary>
+          <p>Em média, meio período. A duração exata varia conforme a metragem, a tipologia e o estado do imóvel.</p>
+        </details>
+        <details>
+          <summary>Como é feito o orçamento?</summary>
+          <p>O valor é calculado por metragem e tipologia do imóvel. O orçamento é feito sem compromisso — basta informar o tipo de imóvel e a metragem aproximada.</p>
+        </details>
+        <details>
+          <summary>A vistoria atende quais cidades?</summary>
+          <p>Campo Grande - MS e região.</p>
+        </details>
+        <details>
+          <summary>O relatório serve como prova em uma negociação ou processo?</summary>
+          <p>Sim. O relatório descreve e ilustra as ocorrências encontradas, com registro fotográfico, e é acompanhado de ART (Anotação de Responsabilidade Técnica) — o que lhe confere validade documental e jurídica.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTATO ======== -->
+  <section id="contato" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Solicitar atendimento</span>
+        <h2>Fale sobre o seu imóvel.</h2>
+        <p>Conte em que momento você está e qual o tipo de imóvel. O retorno vem com o enquadramento do serviço e o próximo passo.</p>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2zm0 18.13h-.01c-1.52 0-3.02-.41-4.32-1.18l-.31-.18-3.21.84.86-3.13-.2-.32a8.22 8.22 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+            <div><span>WhatsApp</span><a href="https://wa.me/5567999583183" target="_blank" rel="noopener">(67) 99958-3183</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg>
+            <div><span>E-mail</span><a href="mailto:ramosengenhariaevistoria@gmail.com">ramosengenhariaevistoria@gmail.com</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <div><span>Instagram</span><a href="https://www.instagram.com/ramosengenhariaevistoria" target="_blank" rel="noopener">@ramosengenhariaevistoria</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><span>Atendimento</span>Campo Grande - MS e região</div>
+          </li>
+        </ul>
+      </div>
+
+      <form action="[URL_DO_SEU_FORMULARIO]" method="post">
+        <div class="field">
+          <label for="nome">Nome completo <span class="req">*</span></label>
+          <input id="nome" name="nome" type="text" required autocomplete="name" placeholder="Como devemos chamar você">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">E-mail <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="seu@email.com">
+          </div>
+          <div class="field">
+            <label for="tel">WhatsApp <span class="req">*</span></label>
+            <input id="tel" name="telefone" type="tel" required autocomplete="tel" placeholder="(67) 90000-0000">
+          </div>
+        </div>
+        <div class="field">
+          <label for="servico">Tipo de serviço <span class="req">*</span></label>
+          <select id="servico" name="servico" required>
+            <option value="" selected disabled>Selecione</option>
+            <option>Vistoria para entrega das chaves</option>
+            <option>Vistoria de locação — entrada</option>
+            <option>Vistoria de locação — saída</option>
+            <option>Vistoria para laudo pericial</option>
+            <option>Não sei / preciso de orientação</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="imovel">Tipo e localização do imóvel</label>
+          <input id="imovel" name="imovel" type="text" placeholder="Ex.: apartamento de 2 quartos, bairro Monte Castelo">
+        </div>
+        <div class="field">
+          <label for="msg">Mensagem <span class="req">*</span></label>
+          <textarea id="msg" name="mensagem" required placeholder="Conte em que momento você está e se há prazo a cumprir."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Solicitar uma vistoria</button>
+        <p class="formnote">Prefere conversar agora? <a href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20vistoria%20t%C3%A9cnica%20de%20im%C3%B3veis." target="_blank" rel="noopener">Falar com um especialista no WhatsApp</a></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo on-dark lg" href="#top" aria-label="Ramos Engenharia"><svg role="img" aria-label="Ramos Engenharia" xmlns="http://www.w3.org/2000/svg" viewBox="376.7 381.9 1166.7 316.1"><path fill="currentColor" d="M 494.019531 511.730469 C 508.054688 508.117188 519.011719 500.898438 526.90625 490.074219 C 534.789062 479.242188 538.667969 467.347656 538.667969 454.25 C 538.667969 438.339844 532.914062 424.304688 521.550781 412.011719 C 510.1875 399.710938 494.949219 393.558594 475.832031 393.558594 L 384.671875 393.558594 L 384.671875 420.160156 L 475.035156 420.160156 C 485.460938 420.160156 493.886719 423.507812 500.304688 430.1875 C 506.71875 436.871094 509.921875 444.886719 509.921875 454.117188 C 509.921875 463.339844 506.585938 471.222656 500.027344 477.773438 C 493.480469 484.320312 484.800781 487.667969 473.96875 487.667969 L 384.671875 487.667969 L 384.671875 585.242188 L 414.347656 585.242188 L 414.347656 514.136719 L 462.734375 514.136719 L 509.257812 585.375 L 543.472656 585.375 Z M 494.019531 511.730469 "/><path fill="currentColor" d="M 711.464844 393.691406 L 673.507812 393.691406 L 597.578125 585.375 L 628.597656 585.375 L 646.90625 538.863281 L 657.074219 512.527344 L 657.066406 512.527344 L 657.542969 511.304688 L 657.625 511.101562 L 657.765625 510.738281 L 692.625 421.894531 L 727.910156 512.527344 L 738.066406 538.863281 L 756.386719 585.375 L 787.394531 585.375 Z M 711.464844 393.691406 "/><path fill="currentColor" d="M 1014.867188 393.691406 L 948.035156 490.074219 L 880.9375 393.691406 L 852.460938 393.691406 L 852.460938 585.375 L 882.40625 585.375 L 882.40625 445.160156 L 947.769531 537.261719 L 1013.53125 445.160156 L 1013.53125 585.375 L 1043.347656 585.375 L 1043.347656 393.691406 Z M 1014.867188 393.691406 "/><path fill="currentColor" d="M 1267.21875 541.003906 C 1254.25 555.039062 1237.402344 561.988281 1216.816406 561.988281 L 1216.816406 561.722656 C 1196.234375 561.722656 1179.394531 554.765625 1166.292969 540.730469 C 1153.1875 526.695312 1146.640625 509.453125 1146.640625 489.003906 C 1146.640625 468.949219 1153.1875 452.109375 1166.292969 438.339844 C 1179.394531 424.570312 1196.234375 417.753906 1216.816406 417.753906 C 1237.269531 417.753906 1253.976562 424.710938 1267.082031 438.472656 C 1280.183594 452.242188 1286.730469 469.214844 1286.730469 489.269531 C 1286.730469 509.71875 1280.183594 526.96875 1267.21875 541.003906 M 1287.933594 418.558594 C 1268.949219 399.710938 1245.15625 390.222656 1216.683594 390.222656 C 1188.082031 390.222656 1164.285156 399.710938 1145.304688 418.558594 C 1126.320312 437.410156 1116.832031 461.066406 1116.832031 489.402344 C 1116.832031 517.738281 1126.320312 541.402344 1145.4375 560.519531 C 1164.550781 579.632812 1188.347656 589.121094 1216.816406 589.121094 L 1216.816406 588.988281 C 1245.296875 588.988281 1268.949219 579.5 1287.933594 560.386719 C 1306.917969 541.269531 1316.402344 517.605469 1316.402344 489.269531 C 1316.402344 460.933594 1306.917969 437.410156 1287.933594 418.558594 "/><path fill="currentColor" d="M 1522.628906 498.898438 C 1514.210938 491.277344 1501.644531 484.859375 1485.070312 479.648438 L 1438.015625 464.675781 C 1429.457031 462.136719 1423.175781 459.054688 1419.296875 455.453125 C 1415.421875 451.84375 1413.421875 447.292969 1413.421875 441.816406 C 1413.421875 434.871094 1416.890625 428.851562 1423.714844 423.773438 C 1430.527344 418.691406 1439.21875 416.152344 1449.777344 416.152344 C 1461.945312 416.152344 1472.636719 418.824219 1481.855469 424.304688 C 1491.085938 429.789062 1497.902344 437.003906 1502.441406 445.957031 L 1530.113281 437.675781 C 1524.230469 424.039062 1514.210938 412.675781 1500.042969 403.585938 C 1485.867188 394.496094 1469.023438 389.949219 1449.511719 389.949219 C 1430.527344 389.949219 1414.757812 395.160156 1402.191406 405.460938 C 1389.625 415.753906 1383.34375 428.179688 1383.34375 442.621094 C 1383.34375 464.941406 1397.644531 480.578125 1426.386719 489.535156 L 1474.503906 504.90625 C 1485.46875 508.382812 1493.21875 512.261719 1497.902344 516.675781 C 1502.574219 521.082031 1504.847656 526.429688 1504.847656 532.84375 C 1504.847656 540.730469 1500.707031 547.683594 1492.554688 553.703125 C 1484.398438 559.710938 1473.972656 562.792969 1461.273438 562.792969 C 1446.839844 562.792969 1434.40625 559.046875 1423.847656 551.5625 C 1413.289062 544.074219 1405.800781 534.453125 1401.386719 522.816406 L 1373.316406 531.242188 C 1378.800781 547.554688 1389.226562 561.324219 1404.597656 572.410156 C 1419.972656 583.507812 1438.28125 589.121094 1459.671875 589.121094 L 1460.476562 588.988281 C 1482.53125 588.988281 1500.574219 583.375 1514.476562 572.144531 C 1528.378906 560.914062 1535.328125 547.144531 1535.328125 530.710938 C 1535.328125 517.074219 1531.050781 506.515625 1522.628906 498.898438 "/><path fill="currentColor" d="M 704.875 635.628906 L 704.875 658.125 L 735.882812 658.125 L 735.882812 661.722656 L 704.875 661.722656 L 704.875 685.21875 L 740 685.21875 L 740 689.054688 L 700.71875 689.054688 L 700.71875 631.753906 L 740.078125 631.753906 L 740.078125 635.628906 Z M 704.875 635.628906 "/><path fill="currentColor" d="M 797.265625 631.753906 L 797.265625 689.050781 L 793.390625 689.050781 L 755.671875 638.828125 L 755.671875 689.050781 L 751.515625 689.050781 L 751.515625 631.753906 L 755.351562 631.753906 L 793.070312 682.019531 L 793.070312 631.753906 Z M 797.265625 631.753906 "/><path fill="currentColor" d="M 865.359375 661.84375 C 865.320312 670.75 862.605469 677.664062 857.25 682.621094 C 851.894531 687.574219 845.144531 690.050781 837.03125 690.050781 C 828.640625 690.050781 821.609375 687.214844 815.933594 681.5 C 810.261719 675.785156 807.425781 668.714844 807.425781 660.242188 C 807.425781 651.894531 810.21875 644.898438 815.855469 639.265625 C 821.488281 633.632812 828.480469 630.796875 836.871094 630.796875 C 843.066406 630.796875 848.539062 632.3125 853.253906 635.351562 C 857.96875 638.386719 861.324219 642.421875 863.285156 647.457031 L 859.289062 648.414062 C 857.609375 644.300781 854.773438 640.984375 850.816406 638.46875 C 846.859375 635.949219 842.1875 634.671875 836.832031 634.671875 C 829.359375 634.671875 823.289062 637.148438 818.570312 642.101562 C 813.855469 647.058594 811.5 653.089844 811.5 660.164062 C 811.5 667.476562 813.855469 673.628906 818.609375 678.664062 C 823.367188 683.699219 829.519531 686.214844 837.070312 686.214844 C 844.0625 686.214844 849.816406 684.136719 854.332031 680.023438 C 858.847656 675.90625 861.246094 670.273438 861.566406 663.121094 L 836.59375 663.121094 L 836.59375 659.445312 L 865.480469 659.445312 Z M 865.359375 661.84375 "/><path fill="currentColor" d="M 879.875 635.628906 L 879.875 658.125 L 910.882812 658.125 L 910.882812 661.722656 L 879.875 661.722656 L 879.875 685.21875 L 915 685.21875 L 915 689.054688 L 875.71875 689.054688 L 875.71875 631.753906 L 915.078125 631.753906 L 915.078125 635.628906 Z M 879.875 635.628906 "/><path fill="currentColor" d="M 972.265625 631.753906 L 972.265625 689.050781 L 968.390625 689.050781 L 930.667969 638.828125 L 930.667969 689.050781 L 926.515625 689.050781 L 926.515625 631.753906 L 930.351562 631.753906 L 968.070312 682.019531 L 968.070312 631.753906 Z M 972.265625 631.753906 "/><path fill="currentColor" d="M 1030.652344 631.753906 L 1030.652344 689.050781 L 1026.496094 689.050781 L 1026.496094 661.722656 L 989.496094 661.722656 L 989.496094 689.050781 L 985.339844 689.050781 L 985.339844 631.753906 L 989.496094 631.753906 L 989.496094 657.964844 L 1026.496094 657.964844 L 1026.496094 631.753906 Z M 1030.652344 631.753906 "/><path fill="currentColor" d="M 1078.449219 668.355469 L 1065.105469 636.347656 L 1051.679688 668.355469 Z M 1080.085938 672.191406 L 1050.078125 672.191406 L 1043.007812 689.050781 L 1038.453125 689.050781 L 1062.667969 631.753906 L 1067.5 631.753906 L 1091.714844 689.050781 L 1087.121094 689.050781 Z M 1080.085938 672.191406 "/><path fill="currentColor" d="M 1103.511719 661.601562 L 1125.128906 661.601562 C 1129.242188 661.601562 1132.519531 660.324219 1134.957031 657.765625 C 1137.394531 655.210938 1138.59375 652.171875 1138.59375 648.617188 C 1138.59375 645.058594 1137.355469 642.023438 1134.917969 639.464844 C 1132.480469 636.90625 1129.203125 635.628906 1125.089844 635.628906 L 1103.550781 635.628906 Z M 1122.609375 665.316406 L 1103.550781 665.316406 L 1103.550781 689.050781 L 1099.398438 689.050781 L 1099.398438 631.753906 L 1125.167969 631.753906 C 1130.5625 631.753906 1134.839844 633.472656 1137.953125 636.90625 C 1141.070312 640.34375 1142.628906 644.261719 1142.628906 648.617188 C 1142.628906 652.769531 1141.273438 656.449219 1138.554688 659.683594 C 1135.835938 662.921875 1132.121094 664.757812 1127.367188 665.238281 L 1143.429688 689.050781 L 1138.59375 689.050781 Z M 1122.609375 665.316406 "/><path fill="currentColor" d="M 1154.066406 631.753906 L 1158.222656 631.753906 L 1158.222656 689.050781 L 1154.066406 689.050781 Z M 1154.066406 631.753906 "/><path fill="currentColor" d="M 1206.011719 668.355469 L 1192.667969 636.347656 L 1179.242188 668.355469 Z M 1207.652344 672.191406 L 1177.644531 672.191406 L 1170.570312 689.050781 L 1166.015625 689.050781 L 1190.230469 631.753906 L 1195.066406 631.753906 L 1219.277344 689.050781 L 1214.683594 689.050781 Z M 1207.652344 672.191406 "/></svg></a>
+        <p style="margin-top:16px">Vistoria técnica de imóveis para recebimento, locação e laudos periciais em Campo Grande - MS e região.</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#entrega-chaves">Entrega das chaves</a></li>
+          <li><a href="#servicos">Vistoria de locação</a></li>
+          <li><a href="#servicos">Laudos periciais</a></li>
+          <li><a href="#verificamos">O que verificamos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5567999583183" target="_blank" rel="noopener">(67) 99958-3183</a></li>
+          <li><a href="mailto:ramosengenhariaevistoria@gmail.com">ramosengenhariaevistoria@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/ramosengenhariaevistoria" target="_blank" rel="noopener">@ramosengenhariaevistoria</a></li>
+          <li><a href="https://www.luanaramos.eng.br">luanaramos.eng.br</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="ano">2026</span> Ramos Engenharia e Vistoria. Todos os direitos reservados.</span>
+      <span>L. Xavier Ramos LTDA · CNPJ 66.929.356/0001-12 · Responsável técnica: Luana Ramos, CREA-MS 70573</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20uma%20vistoria%20t%C3%A9cnica%20de%20im%C3%B3vel." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2zm0 18.13h-.01c-1.52 0-3.02-.41-4.32-1.18l-.31-.18-3.21.84.86-3.13-.2-.32a8.22 8.22 0 01-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+</a>
+
+<div class="mobile-cta">
+  <a class="btn btn-primary" href="#contato">Solicitar vistoria</a>
+  <a class="btn btn-ghost" href="https://wa.me/5567999583183?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20especialista." target="_blank" rel="noopener">Falar no WhatsApp</a>
+</div>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

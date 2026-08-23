@@ -1,0 +1,22 @@
+# Ramos Engenharia e Vistoria — imagens do site www.luanaramos.eng.br
+# Baixe tudo de uma vez:  xargs -n1 curl -sSLO < imagens-urls.txt
+https://static.wixstatic.com/media/c0fbcb_37ccfd14aa834691941d9b7fd6f443ad~mv2.png
+https://static.wixstatic.com/media/c0fbcb_2aa3eedc492b4d7691260c3655e2961a~mv2.png
+https://static.wixstatic.com/media/c0fbcb_4a5a649f311544de94c33021b2387b37~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_97d56ba5e7a644edb749efd7ae6788fc~mv2.png
+https://static.wixstatic.com/media/c0fbcb_e91ed105c0b942259fc1944224e9b7d4~mv2.png
+https://static.wixstatic.com/media/c0fbcb_578c4bafa366458486a858341b547f05~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_d7d53563776a40c5a11197bd583fd9d2~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_d891c599993841719f322f9b504c80b3~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_34f78def110841fe8d90d27ea892bf82~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_0ddd7769541c4d1b9141606c1962b13a~mv2.png
+https://static.wixstatic.com/media/c0fbcb_b36ed95d1dfd419c8ba486ac44252d12~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_45566905390847c4ac5a62e83c26cece~mv2.jpg
+https://static.wixstatic.com/media/c0fbcb_c293330ec86b482084445e8965d73647~mv2.png
+https://static.wixstatic.com/media/c0fbcb_669497533cc4464eb12ee0cf09056bd2~mv2.png
+https://static.wixstatic.com/media/c0fbcb_dfa9e909b1d644348384b34d98c06bbd~mv2.png
+https://static.wixstatic.com/media/c0fbcb_43ce31fac7464fe488b58554b574184f~mv2.png
+https://static.wixstatic.com/media/c0fbcb_13051b1babf0468b9fa85553e57395d9~mv2.png
+https://static.wixstatic.com/media/c0fbcb_4ec2e6a398e44ba39eab6e04dd9767cf~mv2.png
+https://static.wixstatic.com/media/c0fbcb_be8f04cffbcb4b77ac9d7d52ad7f3a98~mv2.png
+https://static.wixstatic.com/media/c0fbcb_0bb1b78b662e4044a72124b5cf77ff99~mv2.png
